@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Felipe Suárez">
+    <meta name="description" content="Hoja de vida de Felipe Suárez">
+    <title>Hoja de vida</title>
+  </head>
+  <body>
+    <header>
+      <svg viewbox="0 0 1300 400" width="10%">
+        <image height="400" width="1300" xlink:href="img/Logo.svg">
+      </svg>
+      <h1>Hoja de vida</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+      </ul>
+
+    </nav>
+    <section id="contenido_eduacion">
+      <h2>Educación</h2>
+      <table border="1">
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>Culminó</th>
+        </tr>
+        <tr>
+          <td>2000</td>
+          <td>Pontificia Universidad Católica del Ecuador</td>
+          <td>Quito - Ecuador</td>
+          <td>Sí</td>
+        </tr>
+        <tr>
+          <td>2006</td>
+          <td>Universitat Oberta de Catalunya</td>
+          <td>Barcelona - España</td>
+          <td>Sí</td>
+        </tr>
+        <tr>
+          <td>2008</td>
+          <td>EOI Escuela de negocios</td>
+          <td>Sevilla - España</td>
+          <td>Sí</td>
+        </tr>
+      </table>
+
+      <h2>Agregar estudios</h2>
+      <form id="frmEstudios" action="educacion.html" method="post">
+        <fieldset>
+          <legend>Estudios</legend>
+          <label for="anio">Año</label>
+          <select name="anio" id="anio" required>
+            <<option value="2017">2017</option>
+            <<option value="2016">2016</option>
+            <<option value="2015">2015</option>
+            <<option value="2014">2014</option>
+            <<option value="2013">2013</option>
+            <<option value="2012">2012</option>
+            <<option value="2011">2011</option>
+            <<option value="2010">2010</option>
+            <<option value="2009">2009</option>
+            <<option value="2008">2008</option>
+            <<option value="2007">2007</option>
+            <<option value="2006">2006</option>
+            <<option value="2005">2005</option>
+            <<option value="2004">2004</option>
+            <<option value="2003">2003</option>
+            <<option value="2002">2002</option>
+            <<option value="2001">2001</option>
+            <<option value="2000">2000</option>
+          </select>
+          <br>
+          <label for="institucion">Institución</label>
+          <input type="text" id="institucion" name="institucion" required/>
+          <br>
+          <label for="lugar">Lugar</label>
+          <br>
+          <textarea name="lugar" rows="8" cols="80" required></textarea>
+          <br>
+          <label for="culmino">Culminó</label>
+          <input type="radio" name="culmino" value="Sí" checked="true"> Sí
+          <input type="radio" name="culmino" value="No"> No
+          <br>
+          <input type="submit" value="Enviar"/>
+        </fieldset>
+      </form>
+
+    </section>
+    <footer>
+      <a href="https://twitter.com/felipesuarezr" target="_blank">Twitter</a><br>
+      <a href="https://facebook.com/felipesuarezr" target="_blank">Facebook</a><br>
+      <small>&copy; 2017, Felipe Suárez</small>
+    </footer>
+  </body>
+</html>
